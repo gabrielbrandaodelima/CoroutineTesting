@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">CourotinesTesting</string>
+
+    <!-- Main -->
+    <string name="open_basic">Open Basic</string>
+    <string name="open_cancellation_and_timeouts">Open Cancellation And Timeouts</string>
+    <string name="open_composing_suspend_functions">Open Composing Suspend Functions</string>
+
+    <!-- Basic Test One -->
+    <string name="title_test_one">Execute the coroutine inside a context from GlobalScope.launch</string>
+    <string name="run_test_one">Run the first Coroutine</string>
+
+    <!-- Basic Test Two -->
+    <string name="title_test_two">Execute the coroutine inside a context from runBlocking</string>
+    <string name="run_test_two">Run the second Coroutine</string>
+
+    <!-- Basic Test Three -->
+    <string name="title_test_three">Execute multiples coroutines and wait all finish with Job.join</string>
+    <string name="run_test_three">Run the third Coroutine</string>
+
+    <!-- Basic Test Four -->
+    <string name="title_test_four">Execute multiples coroutines but dont wait the finish (without Job.join)</string>
+    <string name="run_test_four">Run the fourth Coroutine</string>
+
+    <!-- Basic Test Five -->
+    <string name="title_test_five">couroutineScope inside a runBlocking</string>
+    <string name="run_test_five">Run the fifth Coroutine</string>
+
+    <!-- Basic Test Six -->
+    <string name="title_test_six">Using multiples coroutines with suspend functions</string>
+    <string name="run_test_six">Run the sixth Coroutine</string>
+
+    <!-- Basic Test Seven -->
+    <string name="title_test_seven">Continue GlobalScope inside runBlocking after runBlocking is finished (GlobalScope create a new independent context)</string>
+    <string name="run_test_seven">Run the seventh Coroutine</string>
+
+    <!-- Cancellation and Timeout Test One -->
+    <string name="title_cancel_timeout_test_one">Cancel a job and join him</string>
+    <string name="run_cancel_timeout_test_one">Run the first cancel and timeout</string>
+
+    <!-- Cancellation and Timeout Test Two -->
+    <string name="title_cancel_timeout_test_two">Try cancel a job and join him but the process is being used then the loop needs be completed to be cancel</string>
+    <string name="run_cancel_timeout_test_two">Run the second cancel and timeout</string>
+
+    <!-- Cancellation and Timeout Test Three -->
+    <string name="title_cancel_timeout_test_three">Making the process be cancelable</string>
+    <string name="run_cancel_timeout_test_three">Run the third cancel and timeout</string>
+
+    <!-- Cancellation and Timeout Test Four -->
+    <string name="title_cancel_timeout_test_four">Run a new coroutine with a cancelled coroutine, inside the finally (usually this throws a CancellationException) using withContext(NonCancellable)</string>
+    <string name="run_cancel_timeout_test_four">Run the fourth cancel and timeout</string>
+
+    <!-- Cancellation and Timeout Test Five -->
+    <string name="title_cancel_timeout_test_five">Set timeout to the coroutine and catching the TimeoutException with withTimeoutOrNull</string>
+    <string name="run_cancel_timeout_test_five">Run the fourth cancel and timeout</string>
+
+    <!-- Composing Suspend Functions Test One -->
+    <string name="title_composing_suspend_functions_one">Coroutine execute is sequential by default, the suspend functions will be executed in sequence</string>
+    <string name="run_composing_suspend_functions_one">Run the first composing s. function</string>
+
+    <!-- Composing Suspend Functions Test Two -->
+    <string name="title_composing_suspend_functions_two">Executing the courotines in concurrent using async</string>
+    <string name="run_composing_suspend_functions_two">Run the second composing s. function</string>
+
+    <!-- Composing Suspend Functions Test Three -->
+    <string name="title_composing_suspend_functions_three">Executing the suspend functions with GlobalScope.async</string>
+    <string name="run_composing_suspend_functions_three">Run the third composing s. function</string>
+
+    <!-- Composing Suspend Functions Test Four -->
+    <string name="title_composing_suspend_functions_four">Propagating exception inside of the context to stop coroutine</string>
+    <string name="run_composing_suspend_functions_four">Run the fourth composing s. function</string>
+</resources>
